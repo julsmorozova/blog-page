@@ -1,0 +1,43 @@
+.top-panel {
+	clear: both;
+	background-color: #ececec;
+	height: 80px;
+}
+
+.blog-container .top-panel {
+	height: 80px;
+	margin-left: 30px;
+}
+
+.top-panel h2 {
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 18px;
+	margin: 30px auto;
+}
+
+.top-panel a, .top-panel span {
+	display: inline-block;
+	margin: 30px auto;
+/*	vertical-align: baseline;*/
+}
+
+.top-panel a, .top-panel span {
+	float: right;
+	color: #7f8c8c;
+	text-decoration: none;
+}
+
+.top-panel span {
+	margin: 34px 6px;
+}
+
+.triangle {
+	margin-left: 11%;
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 13px 12px 0 12px;
+	border-color: #ececec transparent transparent transparent;
+}

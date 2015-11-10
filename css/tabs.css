@@ -1,0 +1,80 @@
+.blog-tabs { 
+	position: relative; height: 250px; 
+	margin: 0; 
+	padding: 29px 0 0 0; 
+	padding: calc(28px + 1px) 0 0 0; 
+} 
+
+.blog-tabs li, .blog-tabs li:after { 
+	position: absolute; 
+	background: #fff; 
+} 
+
+.blog-tabs li { 
+	width: 100%; 
+	height: 170px; 
+	height: calc(180px - 10px); 
+	list-style: none; 
+	padding: 34px 22px 34px; 
+	background-color: #f8f8f8; 
+	border-bottom: 3px solid #e5e6e6;
+} 
+
+.blog-tabs li:after { 
+	content: attr(data-tab); 
+	top: -50px;
+	left: -1px;
+	/*top: calc(-52px - 2px); */
+	width: 130px; 
+	line-height: 50px; 
+	text-align: center; 
+	cursor: pointer;
+	background-color: #62b9b0;
+	color: #fff;
+	font-weight: 700;	
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.blog-tabs li:nth-of-type(2):after { 
+	left: 140px; 
+} 
+
+.blog-tabs li:nth-of-type(3):after { 
+	left: 280px; 
+	background-color: #e2534b;
+} 
+
+.blog-tabs li:nth-of-type(4):after {
+	left: 420px;
+}
+
+.blog-tabs li:hover:after { 
+	background-color: #f8f8f8; 
+	color: inherit;
+} 
+
+.blog-tabs li:after, .blog-tabs li:hover, .blog-tabs li:nth-of-type(1) { 
+	z-index: 1; 
+}
+
+.blog-tabs p {
+	float: left;
+	max-width: 68%;
+	font-size: 10px;
+}
+
+.tab-img {
+	display: inline-block;
+	float: left;
+	margin-left: 40px;
+	background-color: #fff;
+	border-radius: 5px;
+	width: 160px;
+	height: 110px;
+}
+
+.tab-img .fa {
+	font-size: 34px;
+	padding: 22% 0 0 38%;
+}
