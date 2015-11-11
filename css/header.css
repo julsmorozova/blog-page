@@ -1,8 +1,8 @@
 .blog-header {
 	background: #76c7c0 url("../img/ruler_btm.png") repeat-x bottom;
-	height: 80px;
+	height: 6.7em;
 	text-align: center;
-	line-height: 40px;
+	line-height: 3.3em;
 }
 
 .blog-header a, .blog-menu > li {
@@ -13,10 +13,9 @@
 }
 
 .logo {
-	font-size: 24px;
+	font-size: 2em;
 	font-weight: bold;
-	line-height: 40px;	
-	padding: 17px 0;
+	line-height: 3.2em;	
 	text-transform: uppercase;
 	float: left;
 }
