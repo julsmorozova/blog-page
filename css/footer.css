@@ -1,15 +1,11 @@
 /*FOOTER*/
 .blog-footer {
-	margin: 26% 0 0 0;
+	/*margin: 26% 0 0 0;*/
 	background: #76c7c0 url("../img/ruler_top.png") repeat-x top;
 	color: #fff;
 	font-size: 0.83em;
 	padding: 4.1em 0;
 }
-
-/*.blog-footer:before {
-	margin: 10%;
-}*/
 
 .blog-footer .blog-cell-3 {
 	margin-right: 7.3em;

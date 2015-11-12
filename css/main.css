@@ -64,11 +64,7 @@ img, embed, object, video {
 }
 
 [class*="blog-cell-"]:last-of-type {
-	margin-right: 0  !important;
-}
-
-.blog-cell-2:last-of-type {
-	width: 25%;
+	margin-right: 0 !important;
 }
 
 .my-cell-1 {

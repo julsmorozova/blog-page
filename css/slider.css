@@ -1,4 +1,8 @@
-/*slider-holder*/
+.blog-cell-2.slider {
+	width: 25%;
+}
+
+/*SLIDER-HOLDER*/
 
 [class*="slider-holder"] {
     height: 41.7em;    
@@ -16,6 +20,13 @@
 .slider-holder.small {
 	height: 16.6em;
 }
+
+.overflow {
+	width: 100%;
+	overflow: hidden;
+}
+
+/*IMG-SLIDER-NAV*/
 
 [class*="img-slider-nav"] {
 	margin: 23% 0 0;
@@ -43,6 +54,14 @@
 	width: 2.5em;
 }
 
+.img-slider-nav label:last-child {
+	margin-right: 0;
+}
+
+.img-slider-nav.small label:last-child {
+	margin-right: 0;
+}
+
 #large-slide1:checked ~ .img-slider-nav.large label:nth-child(1),
 #large-slide2:checked ~ .img-slider-nav.large label:nth-child(2),
 #large-slide3:checked ~ .img-slider-nav.large label:nth-child(3) {
@@ -61,22 +80,13 @@
 	background-color: #e2534b;
 }
 
-.img-slider-nav label:last-child {
-	margin-right: 0;
-}
 
-.img-slider-nav.small label:last-child {
-	margin-right: 0;
-}
-
-/*image-holder*/
+/*IMAGE-HOLDER*/
 
 [class*="image-holder"] {
     height: 41.7em; 
-    /*background: url("../img/image-icon.png") no-repeat center center;
-    background-size: 108px 86px;*/
-    clear: both;
-    position: relative;        
+    width: 300%;
+	line-height: 0;       
     -webkit-transition: left 2s;
     -moz-transition: left 2s;
     -o-transition: left 2s;
@@ -85,19 +95,69 @@
 
 .image-holder.small {
 	height: 16.6em;
-	/*background-size: 54px 42px;*/
 }
-        
 
-/*button-holder*/
+[class*="image-holder"] {
+
+}
+
+[class*="image-holder"] article {
+	width: 33.3%;
+	height: 100%;
+	float: left;
+}
+
+article i {
+	display: inline-block;
+	padding: 20% 0 0 8%;
+}
+
+article span {
+	display: block;
+	font-size: 1.5em;
+	padding: 0;
+	margin-top: 5.5em;
+	color: #b0b8b9;
+	font-weight: 700;
+}
+
+.image-holder.medium article span {
+	margin-top: 6.7em;
+}
+
+.image-holder.small article span {
+	font-size: 0.9em;
+	margin-top: -1.7em;
+}
+
+.image-holder.small article i {
+	padding: 20% 30% 20% 8%;
+	display: inline-block;
+}
+
+.fa-5x {
+    font-size: 9em;
+    padding: 0;
+    margin: 20% 0 0 0%;	
+}
+
+.medium .fa-5x {
+	margin: 30% 0 0 3%;
+}
+
+.small .fa-4x {
+    font-size: 4.5em;
+    margin: 11% 0 0 15%;
+    padding: 0;
+}        
+
+/*BUTTON-HOLDER*/
 
 
 [class*="button-holder"] {
 	width: 100%;
 	height: 5em;
 	margin: -28% 0 0 0;
-/*	position: relative;
-	top: -110%;*/
 }
 
 .button-holder.medium {
@@ -106,7 +166,6 @@
 
 .button-holder.small {
 	margin: -48% 0 0 0;
-	top: inherit;
 }
 
 [class*="button-holder"] label {
@@ -119,14 +178,14 @@
     vertical-align: baseline;
 } 
 
-[class*="button-holder"] label:hover {
-	opacity: 0.8;
-}
-
 .button-holder.small label {
     height: 3.3em;
     width: 3.3em;
 } 
+
+[class*="button-holder"] label:hover {
+	opacity: 0.8;
+}
 	
 #large-slide1:checked ~ .button-holder.large label:nth-child(3),
 #large-slide2:checked ~ .button-holder.large label:nth-child(1),
@@ -182,18 +241,18 @@
 	border-top: 0.25em solid #e2534b;
 }
 
-#small-slide1:checked ~ .button-holder.small  label:nth-child(3),
-#small-slide2:checked ~ .button-holder.small  label:nth-child(1),
-#small-slide3:checked ~ .button-holder.small  label:nth-child(2) {
+#small-slide1:checked ~ .button-holder.small label:nth-child(3),
+#small-slide2:checked ~ .button-holder.small label:nth-child(1),
+#small-slide3:checked ~ .button-holder.small label:nth-child(2) {
 	display: block;
 	background: #e8645a url('../img/sprite_1.png') no-repeat center 8em;
 	background-position-y: 41%;
 	float: left;
 }
 
-#small-slide1:checked ~ .button-holder.small  label:nth-child(2), 
-#small-slide2:checked ~ .button-holder.small  label:nth-child(3), 
-#small-slide3:checked ~ .button-holder.small  label:nth-child(1) {
+#small-slide1:checked ~ .button-holder.small label:nth-child(2), 
+#small-slide2:checked ~ .button-holder.small label:nth-child(3), 
+#small-slide3:checked ~ .button-holder.small label:nth-child(1) {
 	display: block;
 	background: #e8645a url('../img/sprite_1.png') no-repeat center 8em;
 	background-position-y: 41%;
@@ -211,98 +270,18 @@ input {
 	display: none;
 }
 
-#large-slide1:checked ~ .slides .image-holder { margin-left:0; }
-#large-slide2:checked ~ .slides .image-holder { margin-left:-100%; }
-#large-slide3:checked ~ .slides .image-holder { margin-left:-200%; }
+#large-slide1:checked ~ .slides .image-holder { margin-left: 0; }
+#large-slide2:checked ~ .slides .image-holder { margin-left: -100%; }
+#large-slide3:checked ~ .slides .image-holder { margin-left: -200%; }
 
-#med-slide1:checked ~ .slides .image-holder.medium { margin-left:0; }
-#med-slide1:checked ~ .slides .image-holder.medium { margin-left:-100%; }
-#med-slide1:checked ~ .slides .image-holder.medium { margin-left:-200%; }
+#med-slide1:checked ~ .slides .image-holder.medium { margin-left: 0; }
+#med-slide2:checked ~ .slides .image-holder.medium { margin-left: -100%; }
+#med-slide3:checked ~ .slides .image-holder.medium { margin-left: -200%; }
 
-/*#small-slide1:checked ~ .slides .image-holder.small { margin-bottom:-200; }
-#small-slide1:checked ~ .slides .image-holder.small { margin-bottom:-100%; }
-#small-slide1:checked ~ .slides .image-holder.small { margin-bottom: 0; }
-*/
-.overflow {
-	width: 100%;
-	overflow: hidden;
-}
+#small-slide1:checked ~ .slides .image-holder.small { margin-left: 0; }
+#small-slide2:checked ~ .slides .image-holder.small { margin-left: -100%; }
+#small-slide3:checked ~ .slides .image-holder.small { margin-left: -200%; }
 
-/*.overflow.small {
-	width: 100%;
-	height: 300%;
-}*/
-
-.slides .image-holder {
-	width: 300%;
-	line-height: 0;
-	overflow: hidden;
-}
-
-/*.slides .image-holder.small {
-	width: 100%;
-}*/
-
-.slides article {
-	width: 32.5%;
-	height: 100%;
-	margin-left: 2em;
-	float: left;
-}
-
-.medium .slides article {
-	width: 32.5%;
-	margin-left: 1.4em;
-}
-
-.image-holder.small article {
-	height: 100%;
-	margin: 0 0.33em 0 0.9em;
-}
-
-article i {
-	display: inline-block;
-	padding: 20% 0 0 8%;
-}
-
-article span {
-	display: block;
-	font-size: 1.5em;
-	padding: 0;
-	margin-top: 5.5em;
-	color: #b0b8b9;
-	font-weight: 700;
-}
-
-.image-holder.medium article span {
-	margin-top: 6.7em;
-}
-
-.image-holder.small article span {
-	font-size: 0.9em;
-	margin-top: -1.7em;
-}
-
-.image-holder.small article i {
-	padding: 20% 30% 20% 8%;
-	display: inline-block;
-}
-
-.fa-5x {
-    font-size: 9em;
-    padding: 0;
-    margin: 20% 0 0 0%;	
-}
-
-.medium .fa-5x {
-	margin: 30% 0 0 3%;
-}
-
-.small .fa-4x {
-    font-size: 4.5em;
-    margin: 11% 0 0 15%;
-    padding: 0;
-}
 
 /* Animation */
 

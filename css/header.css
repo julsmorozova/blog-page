@@ -1,6 +1,7 @@
 .blog-header {
 	background: #76c7c0 url("../img/ruler_btm.png") repeat-x bottom;
-	height: 6.7em;
+	/*height: 6.7em;*/
+	content:"";
 	text-align: center;
 	line-height: 3.3em;
 }
@@ -115,7 +116,7 @@ li.search  {
 	margin-bottom: 0;
 }
 
-/* Dropdown */
+/* DROPDOWN */
 
 .dropdown-menu {
 	background-color: #f3f3f3;

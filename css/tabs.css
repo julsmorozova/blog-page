@@ -1,3 +1,9 @@
+.tabs {
+	height: 22em;
+	overflow: scroll;
+	margin-bottom: 2em;
+}
+
 .blog-tabs { 
 	position: relative; 
 	margin: 0; 
