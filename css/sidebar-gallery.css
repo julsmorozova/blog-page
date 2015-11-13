@@ -36,3 +36,13 @@ ul.gallery {
     padding: 25%; 
 }
 
+@media screen and (max-width: 1230px) {
+	.sidebar-gallery .gallery li:nth-child(3n+3) {
+		margin-right: 2.5em;
+	} 
+	.gallery li i.fa-4x {
+		padding: 25% 18%;
+		font-size: 1.8em;
+	}
+}
+

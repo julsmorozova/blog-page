@@ -135,3 +135,27 @@ img, embed, object, video {
 	}
 }
 
+@media screen and (max-width: 400px) {
+	.slider-holder {
+		height: 20em;
+	}
+	.image-holder {
+		height: 20em;
+	}
+	.image-holder article i.fa-5x {
+		margin: 27% 0 0 0%;
+	}
+	.image-holder article span {
+		margin-top: 10%;
+	}
+	.button-holder.large {
+		margin: -162% 0 0 0;
+	}
+	[class*="img-slider-nav"] {
+		    margin: 36% 0 0;
+	}
+	[class*="img-slider-nav"] label {
+		width: 12%;
+	}
+}
+

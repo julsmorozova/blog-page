@@ -22,7 +22,7 @@
 }
 
 .logo span {
-	font-size: 18px;
+	font-size: 0.9em;
 	font-weight: lighter;
 	padding: 0.41em;
 	text-transform: uppercase;
@@ -147,4 +147,12 @@ ul.dropdown-menu  {
 	top: 50%;
 	left: 50%;
 	transform: translate(55%, 0);
+}
+
+
+@media screen and (max-width: 868px) {
+	.blog-menu li {
+		padding: % %;
+
+	}
 }

@@ -80,3 +80,11 @@
 	font-size: 2.8em;
 	padding: 22% 0 0 38%;
 }
+
+@media screen and (max-width: 400px) {
+	.tabs .blog-cell-5 {
+		width: 100%;
+	}
+	.blog-tabs li:after {
+		line-height: 2em; 
+	}
