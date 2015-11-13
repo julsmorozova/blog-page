@@ -18,11 +18,11 @@
 .blog-cell-3 .footer-contact-value {
 	font-size: 1.33em;
 	font-style: italic;
-	padding-left: 1.66em;
+	padding-left: 5%;
 }
 
 .blog-footer .blog-cell-1 {
-	margin-right: 6.67em
+	margin-right: 5%;
 }
 
 .blog-footer h6, .footer-blog-title {
@@ -85,12 +85,13 @@
 	display: inline-block;
 	width: 5.8em;
 	height: 5.8em;
+	max-width: 23%;
+	max-height: 23%;
 }
 
 .footer-blog-img img {
 	margin: 30% 20%;
-	width: 2.8em;
-	height: 2.3em;
+	width: 60%;
 }
 
 .footer-blog-date {

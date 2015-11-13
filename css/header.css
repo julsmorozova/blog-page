@@ -24,7 +24,7 @@
 .logo span {
 	font-size: 18px;
 	font-weight: lighter;
-	padding: 5px;
+	padding: 0.41em;
 	text-transform: uppercase;
 }
 
@@ -38,14 +38,14 @@
 }
 
 .blog-menu {
-	padding: 17px 0;
+	padding: 1.4em 0;
 }
 
 .blog-menu > li {
 	float: right;
-	font-size: 10px;
-	padding: 10px 20px;
-	line-height: 20px;
+	font-size: 0.83em;
+	padding: 0.83em 1.67em;
+	line-height: 1.67em;
 }
 
 .blog-menu > li:first-child {
@@ -55,44 +55,44 @@
 
 .blog-menu li:hover {
 	background-color: #62a29e; 
-	border-radius: 5px;
+	border-radius: 0.4em;
 	/*box-shadow: 0 2px 5px #528b86;*/
-	border-bottom: 3px solid #528b86;
+	border-bottom: 0.25em solid #528b86;
 }
 
 li.search {
 	display: inline-block;
-	height: 34px;
-	width: 34px;
+	height: 3.33em;
+	width: 3.33em;
 	background: #e8645a url('../img/sprite_1.png') no-repeat 9px 152px;
 	background-position-y: 74%;
-	border-radius: 5px;
-	border-bottom: 3px solid #e2534b;
+	border-radius: 0.4em;
+	border-bottom: 0.25em solid #e2534b;
 }
 
 li.search  {
-	margin: 5px 0 0 10px;
+	margin: 0.4em 0 0 0.83em;
 }
 
 .search-field {
 	display: none;
-	width: 200px;
-    height: 40px;
+	width: 16.67em;
+    height: 3.33em;
     position: relative;
-    top: 35px;
-    right: 185px;
+    top: 2.9em;
+    right: 15.4em;
 }
 
 .search-field input {
 	display: inline-block;
-    width: 200px;
-    height: 40px;
-    border: 5px solid #e8645a;
-    border-radius: 5px;
-	margin-top: -3px;
+    width: 16.67em;
+    height: 3.33em;
+    border: 0.41em solid #e8645a;
+    border-radius: 0.4em;
+	margin-top: -0.25em;
     background: #fff;
     color: #8a9595;
-    padding-left: 10px;
+    padding-left: 0.83em;
     outline: none;
 }
 
@@ -104,7 +104,7 @@ li.search  {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 6px 6px 6px;
+    border-width: 0 0.5em 0.5em 0.5em;
     border-color: transparent transparent #e8645a transparent;
 }
 
@@ -120,16 +120,14 @@ li.search  {
 
 .dropdown-menu {
 	background-color: #f3f3f3;
-  	font-size: 10px;
-  	margin-top: 40px;
+  	font-size: 0.9em;
+  	margin-top: 3.33em;
   	display: none;
-  	height: 12em;
-  	border: 1px solid #ccc;
-  	border-radius: 4px;
-  	line-height: 1.2;
+  	border: 0.083em solid #ccc;
+  	border-radius: 0.4em;
   	position: absolute;
   	width: 6em;
-  	padding: 6px 3px;
+  	padding: 0.5em 0.25em;
 }
 
 ul.dropdown-menu  {

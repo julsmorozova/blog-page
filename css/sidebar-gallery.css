@@ -20,8 +20,8 @@ ul.gallery {
 	display: inline-block;
 	float: left;
 	margin: 2em 2.5em 0 0;
-	height: 5em;
-	width: 5em;
+	/*height: 25%;*/
+	width: 25%;
 	background-color: #f8f8f8;
 	border-radius: 0.4em;
 	border-bottom: 0.25em solid #e5e6e6;
@@ -32,7 +32,7 @@ ul.gallery {
 }
 
 .gallery li i.fa-4x {
-    font-size: 2.7em;
-    padding: 20%; 
+    font-size: 2.2em;
+    padding: 25%; 
 }
 
